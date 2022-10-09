@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+  <input>
+    <net-file value="BB5.net.xml"/>
+    <additional-files value="BB5.poly.xml, BB5.rou.xml"/>
+  </input>
+  <report>
+    <verbose value="false"/>
+    <no-step-log value="true"/>
+  </report>
+  <time>
+    
+  </time>
+</configuration>

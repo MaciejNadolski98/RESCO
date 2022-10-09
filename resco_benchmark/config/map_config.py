@@ -1,4 +1,15 @@
 map_configs = {
+    'BB5': {
+        'lights': [],
+        'net': 'environments/BB5/BB5.sumocfg',
+        'route': None,
+        'step_length': 10,
+        'yellow_length': 3,
+        'step_ratio': 1,
+        'start_time': 0,
+        'end_time': 7000,
+        'warmup': 0
+    },
     'grid4x4': {
         'lights': [],
         'net': 'environments/grid4x4/grid4x4.net.xml',

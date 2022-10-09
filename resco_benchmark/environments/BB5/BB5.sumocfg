@@ -9,6 +9,7 @@
     <no-step-log value="true"/>
   </report>
   <time>
-    
+    <begin value="0"/>
+    <end value="7000"/>
   </time>
 </configuration>

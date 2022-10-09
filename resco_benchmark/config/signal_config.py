@@ -17,18 +17,18 @@ signal_configs = {
 			},
 			'INFMain_Junc': {
 				'lane_sets': {
-					'S-W': [],
-					'S-S': ['TCW1_0','FMN1_0'],
-					'S-E': ['TCW1_0','FMN1_0'],
-					'W-N': ['TCW1_0','FMN1_0'],
-					'W-W': ['TCW1_0','FMN1_0'],
-					'W-S': ['TCW1_0','FMN1_0'],
-					'N-E': ['TCW1_0','FMN1_0'],
-					'N-N': ['TMN1_1','SIRIMWS_0'],
-					'N-W': ['TCW1_0','SIRIMWS_0'],
-					'E-S': ['TCW1_0','SIRIMWS_0'],
-					'E-E': ['TCW1_0','SIRIMWS_0'],
-					'E-N': ['TCW1_0','SIRIMWS_0']
+					'S-W': [], 
+					'S-S': ['FMS2_2', 'FMS2_1'], 
+					'S-E': ['FMS2_0'], 
+					'W-N': ['SKW21_0'], 
+					'W-W': [], 
+					'W-S': [], 
+					'N-E': ['INFN2_2'], 
+					'N-N': ['INFN2_1', 'INFN2_0'], 
+					'N-W': [], 
+					'E-S': [], 
+					'E-E': [], 
+					'E-N': []
 				},
 				'downstream': {
 					'N': None,
@@ -39,18 +39,18 @@ signal_configs = {
 			},
 			'PBB_Junc': {
 				'lane_sets': {
-					'S-W': [],
-					'S-S': ['TCW1_0'],
-					'S-E': [],
-					'W-N': [],
-					'W-W': [],
-					'W-S': [],
-					'N-E': [],
-					'N-N': ['TMN1_1'],
-					'N-W': [],
-					'E-S': [],
-					'E-E': [],
-					'E-N': []
+					'S-W': ['TMS2_2'],
+					'S-S': ['TMS2_2', 'TMS2_1'],
+					'S-E': ['TMS2_0'],
+					'W-N': ['SHW2_1'],
+					'W-W': ['SHW2_1', 'SHW2_0'],
+					'W-S': ['SHW2_0'],
+					'N-E': ['SHN2_2'],
+					'N-N': ['SHN2_2', 'SHN2_1'],
+					'N-W': ['SHN2_0'],
+					'E-S': ['HLE2_1'],
+					'E-E': ['HLE2_1', 'HLE2_0'],
+					'E-N': ['HLE2_0']
 				},
 				'downstream': {
 					'N': None,
@@ -59,19 +59,19 @@ signal_configs = {
 					'W': None,
 				}
 			},
-				'SIRIM_Junc': {
+			'SIRIM_Junc': {
 				'lane_sets': {
-					'S-W': [],
-					'S-S': ['TCW1_0'],
-					'S-E': [],
-					'W-N': [],
-					'W-W': [],
+					'S-W': ['TCS2_2'],
+					'S-S': ['TCS2_1'],
+					'S-E': ['TCS2_0'],
+					'W-N': ['SIRIMW21_1'],
+					'W-W': ['SIRIMW21_0'],
 					'W-S': [],
-					'N-E': [],
-					'N-N': ['TMN1_1'],
+					'N-E': ['SIRIMN3_1'],
+					'N-N': ['SIRIMN3_1', 'SIRIMN3_0'],
 					'N-W': [],
-					'E-S': [],
-					'E-E': [],
+					'E-S': ['TCE3_0'],
+					'E-E': ['TCE3_0'],
 					'E-N': []
 				},
 				'downstream': {
@@ -80,7 +80,7 @@ signal_configs = {
 					'S': None,
 					'W': None}
 			},
-		},
+	},
 	'grid4x4': {
 		'phase_pairs': [[1, 7], [2, 8], [1, 2], [7, 8], [4, 10], [5, 11], [10, 11], [4, 5]],
 		'valid_acts': None,
@@ -319,29 +319,29 @@ signal_configs = {
 		'downstream':{'N': 'nt14', 'E': 'nt10', 'S': 'nt4', 'W': 'nt8'}},
 	},
 	'ingolstadt1': {
-		'phase_pairs': [[1, 7], [7, 8], [9, 11]],
-		'valid_acts': None,
-		'gneJ207': {
-			'lane_sets': {
-				'S-W': ['104010354_1'],
-				'S-S': ['104010354_1', '104010354_2'],
-				'S-E': [],
-				'W-N': ['201963537#1_3'],
-				'W-W': [],
-				'W-S': [],
-				'N-E': [],
-				'N-N': ['201963537#1_1', '201963537#1_2'],
-				'N-W': [],
-				'E-S': ['164051413_1'],
-				'E-E': [],
-				'E-N': ['164051413_2']
-			},
-			'downstream': {
-				'N': None,
-				'E': None,
-				'S': None,
-				'W': None}
-		},
+		# 'phase_pairs': [[1, 7], [7, 8], [9, 11]],
+		# 'valid_acts': None,
+		# 'gneJ207': {
+		# 	'lane_sets': {
+		# 		'S-W': ['104010354_1'],
+		# 		'S-S': ['104010354_1', '104010354_2'],
+		# 		'S-E': [],
+		# 		'W-N': ['201963537#1_3'],
+		# 		'W-W': [],
+		# 		'W-S': [],
+		# 		'N-E': [],
+		# 		'N-N': ['201963537#1_1', '201963537#1_2'],
+		# 		'N-W': [],
+		# 		'E-S': ['164051413_1'],
+		# 		'E-E': [],
+		# 		'E-N': ['164051413_2']
+		# 	},
+		# 	'downstream': {
+		# 		'N': None,
+		# 		'E': None,
+		# 		'S': None,
+		# 		'W': None}
+		# },
 	},
 	'ingolstadt7': {
 		'phase_pairs': [[1, 7], [2, 8], [1, 2], [7, 8], [4, 10], [5, 11], [10, 11], [4, 5], [9, 11], [3, 5], [7, 9]],

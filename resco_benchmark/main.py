@@ -5,10 +5,9 @@ import multiprocessing as mp
 
 from multi_signal import MultiSignal
 import argparse
-from resco_benchmark.config.agent_config import agent_configs
-from resco_benchmark.config.map_config import map_configs
-from resco_benchmark.config.mdp_config import mdp_configs
-
+from config.agent_config import agent_configs
+from config.map_config import map_configs
+from config.mdp_config import mdp_configs
 
 def main():
     ap = argparse.ArgumentParser()
@@ -19,7 +18,7 @@ def main():
     ap.add_argument("--eps", type=int, default=100)
     ap.add_argument("--procs", type=int, default=1)
     ap.add_argument("--map", type=str, default='ingolstadt1',
-                    choices=['grid4x4', 'arterial4x4', 'ingolstadt1', 'ingolstadt7', 'ingolstadt21',
+                    choices=['BB5', 'grid4x4', 'arterial4x4', 'ingolstadt1', 'ingolstadt7', 'ingolstadt21',
                              'cologne1', 'cologne3', 'cologne8',
                              ])
     ap.add_argument("--pwd", type=str, default=os.path.dirname(__file__))

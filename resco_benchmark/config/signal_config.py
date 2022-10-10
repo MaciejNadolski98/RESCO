@@ -31,9 +31,9 @@ signal_configs = {
 					'E-N': []
 				},
 				'downstream': {
-					'N': None,
+					'N': 'PBB_Junc',
 					'E': None,
-					'S': None,
+					'S': 'SIRIM_Junc',
 					'W': None,
 				}
 			},
@@ -55,7 +55,7 @@ signal_configs = {
 				'downstream': {
 					'N': None,
 					'E': None,
-					'S': None,
+					'S': 'INFMain_Junc',
 					'W': None,
 				}
 			},
@@ -75,7 +75,7 @@ signal_configs = {
 					'E-N': []
 				},
 				'downstream': {
-					'N': None,
+					'N': 'INFMain_Junc',
 					'E': None,
 					'S': None,
 					'W': None}
